@@ -6,9 +6,7 @@ const port = 5050; //backend server will run on port 5050
 
 // allows requests only from React frontend running on localhost:5176
 // prevents browser from blocking frontend/backend communication
-app.use(cors({
-  origin: "http://localhost:5176"
-}));
+app.use(cors());
 
 // middleware that converts incoming JSON request bodies into JavaScript objects
 // lets us access request data using req.body
